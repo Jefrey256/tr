@@ -1,0 +1,118 @@
+@font-face {
+    font-family: idroid;
+    src: /*url("./fontes/idroid.otf") format(opentype),*/ url(./fontes/GODOFWAR.TTF) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+    
+  }
+  :root {
+    --cor1: #c5ebd6;
+    --cor2: #83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #063d1e;
+    --font-padrao: Helvetica, verdana , Arial, Sans-serif;
+    --font-idroid: "idroid", cursive;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    font-family: var(--font-padrao);
+    background-color: var(--cor1);
+  }
+  
+  header {
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor6));
+    
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+  }
+  header h1 {
+    color: white;
+    font-family: --font-idroid;
+    font-size: 3em;
+    margin-bottom: 20px;
+    /*box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.269)*/
+  }
+  header > p {
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--font-padrao);
+    max-width: 600px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+      /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.490);*/
+  }
+  nav {
+    background-color: var(--cor6);
+  }
+  nav a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 1s;
+    display: inline-block;
+  }
+  nav > a:hover {
+    background-color: var(--cor4);
+    color: var(--cor5);
+  }
+  main {
+    background-color: white;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.490);
+    margin: auto auto 30px;
+    min-width: 300px;
+    max-width: 1000px;
+  }
+  
+  main h1 {
+  color: --cor6;
+  font-family: var(--font-idroid);
+  }
+  main h2 {
+    font-family: var(--font-idroid);
+  }
+  main p {
+    margin: 15px 0px;
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 2em;
+  font-size: 1em;
+  }
+  main strong {
+    color: var(--cor5);
+    font-weight: bold;
+   
+  }
+  main a {
+   
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor6);
+  }
+  main img {
+    width: 100%;
+  }
+  main img.pequeno {
+   max-width: 350px;
+    display: block;
+    margin: auto;
+  }
+  footer {
+    background-color: var(--cor6);
+    color: white;
+  }
+  .pequeno {
+    display: block;
+  }
